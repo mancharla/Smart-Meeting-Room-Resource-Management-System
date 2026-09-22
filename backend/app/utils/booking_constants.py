@@ -1,0 +1,14 @@
+# ============================================================
+# BOOKING STATUS CONSTANTS
+# ============================================================
+
+BOOKING_STATUS_CONFIRMED = "CONFIRMED"
+BOOKING_STATUS_CANCELLED = "CANCELLED"
+BOOKING_STATUS_COMPLETED = "COMPLETED"
+
+
+VALID_BOOKING_STATUSES = {
+    BOOKING_STATUS_CONFIRMED,
+    BOOKING_STATUS_CANCELLED,
+    BOOKING_STATUS_COMPLETED,
+}

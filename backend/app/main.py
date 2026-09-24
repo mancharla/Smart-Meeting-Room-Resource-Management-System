@@ -1,17 +1,17 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routers.auth import router as auth_router
-from .routers.departments import router as departments_router
-from .routers.users import router as users_router
-from .routers.meeting_rooms import router as meeting_rooms_router
-from .routers.resources import router as resources_router
-from .routers.room_resources import router as room_resources_router
-from .routers import bookings
-from .routers.notifications import router as notifications_router
-from .routers import dashboard
-from .routers import reports
-from .routers import audit_logs
+from app.routers.auth import router as auth_router
+from app.routers.departments import router as departments_router
+from app.routers.users import router as users_router
+from app.routers.meeting_rooms import router as meeting_rooms_router
+from app.routers.resources import router as resources_router
+from app.routers.room_resources import router as room_resources_router
+from app.routers import bookings
+from app.routers.notifications import router as notifications_router
+from app.routers import dashboard
+from app.routers import reports
+from app.routers import audit_logs
 
 app = FastAPI(
     title="Smart Meeting Room & Resource Management System",
